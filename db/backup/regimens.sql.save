@@ -1,0 +1,293 @@
+create table tnmList(pk INTEGER, description TEXT);
+
+INSERT INTO tnmList(pk, description) VALUES (10, 'Gastric Cancer');
+INSERT INTO tnmList(pk, description) VALUES (20, 'Colorectal Cancer');
+--INSERT INTO tnmList(pk, description) VALUES (30, 'Esophageal Squamous Cell Cancer');
+INSERT INTO tnmList(pk, description) VALUES (40, 'TNM for Carcinoma of Breast');
+INSERT INTO tnmList(pk, description) VALUES (50, 'Lung Cancer');
+INSERT INTO tnmList(pk, description) VALUES (60, 'Prostate Cancer');
+INSERT INTO tnmList(pk, description) VALUES (70, 'Bladder Cancer');
+--INSERT INTO tnmList(pk, description) VALUES (80, 'TNM Anatomic Groups for Prognostic Cancer');
+INSERT INTO tnmList(pk, description) VALUES (90, 'Testicular Cancer');
+
+create table tnmT(listID INTEGER, code TEXT, description TEXT);
+
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'TX','Primary tumor cannot be assessed');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'TO','No evidence of primary tumor');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'Tis','Carcinoma in situ: intraepithelial tumor without invasion of the lamina propria');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T1','Tumor invades lamina propria, muscularis mucosae, or submucosa');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T1a','Tumor invades lamina propria or muscularis mucosae');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T1b','Tumor invades submucosa');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T2','Tumor invades muscularis propria*');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T3','Tumor penetrates subserosal connective tissue without invasion of visceral peritoneum or adjacent structucres●∆');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T4','Tumor invades serosa (visceral peritoneum) or adjacent structures●∆');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T4a','Tumor invades serosa (visceral peritoneum)');
+INSERT INTO tnmT(listID, code, description) VALUES(10, 'T4b','Tumor invades adjacent structures');
+
+create table tnmN(listID INTEGER, code TEXT, description TEXT);
+
+INSERT INTO tnmN(listID, code, description) VALUES(10, 'NX','Regional lymph node(s) cannot be assessed');
+INSERT INTO tnmN(listID, code, description) VALUES(10, 'NO','No regional lymph node metastasiso');
+INSERT INTO tnmN(listID, code, description) VALUES(10, 'N1','Metastasis in L-2 regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(10, 'N2','Metastasis in 3-6 regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(10, 'N3','Metastasis in seven or more regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(10, 'N3a','Metastasis in 7-15 regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(10, 'N3b','Metastasis in 16 or more regional lymph nodes');
+
+create table tnmM(listID INTEGER, code TEXT, description TEXT);
+
+INSERT INTO tnmM(listID, code, description) VALUES(10, 'MO','No distant metastasis');
+INSERT INTO tnmM(listID, code, description) VALUES(10, 'M1','Distant metastasis');
+
+create table tnmG(listID INTEGER, code TEXT, description TEXT);
+
+create table tnmStage(listID INTEGER, t_code TEXT, n_code TEXT, m_code TEXT, g_code TEXT, stage TEXT);
+
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'Tis','NO','MO','Stage 0');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T1','NO','MO','Stage IA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T2','NO','MO','Stage IB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T1','N1','MO','Stage IB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T3','NO','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T2','N1','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T1','N2','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4a','NO','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T3','N1','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T2','N2','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T1','N3','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4a','N1','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T3','N2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T2','N3','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4b','NO','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4b','N1','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4a','N2','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T3','N3','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4b','N2','MO','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4b','N3','MO','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'T4a','N3','MO','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(10, 'Any T','Any N','M1','Stage IV');
+
+
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'TX','Primary tumor cannot be assessed');
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'TO','No evidence of primary tumor');
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'Tis','Carcinoma in situ: intraepithelial or invasion of lamina propria*');
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'T1','Tumor invades submucosa');
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'T2','Tumor invades muscularis propria');
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'T3','Tumor invades through the muscularis propria into pericolorectal tissues');
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'T4a','Tumor penetrates to the surface of the visceral peritoneum●');
+INSERT INTO tnmT(listID, code, description) VALUES(20, 'T4b','Tumor directly invades or is adherent to other organs or structures●∆');
+
+
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'NX','Regional lymph nodes cannot be assessed');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'NO','No regional lymph node metastasis');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'N1','Metastasis in 1-3 regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'N1a','Metastasis in one regional lymph node');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'N1b','Metastasis in 2-3 regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'N1c','Tumor deposit(s) in the subserosa, mesentery, or nonperitonealized pericolic or perirectal tissues without regional nodal metastasis');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'N2','Metastasis in four or more regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'N2a','Metastasis in 4-6 regional lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(20, 'N2b','Metastasis in seven or more regional lymph nodes');
+
+INSERT INTO tnmM(listID, code, description) VALUES(20, 'MO','No distant metastasis');
+INSERT INTO tnmM(listID, code, description) VALUES(20, 'M1','Distant metastasis');
+INSERT INTO tnmM(listID, code, description) VALUES(20, 'M1a','Metastasis confined to one organ or site (eg: liver, lung, ovary, nonregional node)');
+INSERT INTO tnmM(listID, code, description) VALUES(20, 'M1b','Metastases in more than one organ/site or the peritoneum');
+
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'Tis','NO','MO','Stage 0');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','NO','MO','Stage I');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','NO','MO','Stage I');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','NO','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4a','NO','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4b','NO','MO','Stage IIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','N1','M0','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','N1c','M0','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','N1','M0','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','N1c','M0','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','N2a','M0','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','N1','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','N1c','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4a','N1','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4a','N1c','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','N2a','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','N2a','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','N2b','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','N2b','M0','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4a','N2a','M0','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','N2b','M0','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4a','N2b','M0','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4b','N1-N2','M0','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'Any T','Any N','M1a','Stage IVA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'Any T','Any N','M1b','Stage IVB');
+
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'TX ','Primary tumor cannot be assessed');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'TO','No evidence of primary tumor');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'Tis','Carcinoma in situ');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T1','Tumor ≤20 mm in greatest dimension');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'Tlmi','Tumor ≤1 mm in greatest dimension');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T1a','Tumor >1 mm but ≤5 mm in greatest dimension');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T1b','Tumor >5 mm but ≤10 mm in greatest dimension');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T1c','Tumor >10 mm but ≤20 mm in greatest dimension');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T2','Tumor >20 mm but ≤50 mm in greatest dimension');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T3','Tumor >50 mm in greatest dimension');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T4◊','Tumor of any size with direct extension to the chest wall and/or to the skin (ulceration or skin nodules)');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T4a','Extension to the chest wall, not including only pectoralis muscle adherence/invasion');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T4b','Ulceration and/or ipsilateral satellite nodules and/or edema (including peau d''orange) of the skin, which do not meet the criteria for inflammatory carcinoma');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T4c','Both T4a and T4b');
+INSERT INTO tnmT(listID, code, description) VALUES(40, 'T4d','Inflammatory carcinoma§');
+
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pNX','Regional lymph nodes cannot be assessed (eg, previously removed, or not removed for pathologic study)');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN0','No regional lymph node metastasis identified histologically');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN0(i- )','No regional lymph node metastases histologically, negative immunohistochemistry (IHC)');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN0(i+)','Malignant cells in regional lymph node(s) no greater than 0.2 mm (detected by H&E or IHC including isolated tumor cell clusters (ITC))');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN0(mol-)','No regional lymph node metastases histologically, negative molecular findings (RT-PCR)●●');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN0(mol+)','Positive molecular findings (RT-PCR)●●, but no regional lymph node metastases detected bV histology or IHC');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN1','Micrometastases; or metastases in 1-3 axillary lymph nodes; and/or in internal mammary nodes with metastases detected by sentinel lymph node biop-sy but not clinically detected ∆∆');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN 1mi','Micrometastases (greater than 0.2 mm and/or more than 200 cells, but none greater than 2.0 mm');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN 1a','Metastases in 1-3 axillary lymph nodes, at least one metastasis greater than 2.0 mm');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN 1b','Metastases in internal mammary nodes with micrometastases or macrometastases detected by sentinel lymph node biopsy but not clinically detected ∆∆');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN 1c','Metastases in 1-3 axillary lymph nodes and in internal mammary or macrometastases detected by sentinel lymph node biopsy but lymph nodes with micrometastases not clinically detected');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN2','Metastases in 4-9 axillary lymph nodes; or in clinically detected◊◊ internal mammary lymph nodes in the absence of axillary lymph node metastases');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN2a','Metastases in 4-9 axillary lymph nodes (at least one tumor deposit greater than 2.0 mm)-..-');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN2b','Metastases in clinically detectedoo internal mammary lymph nodes in the absence of axillary lymph node metastases');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN3','Metastases in ten or more axillary lymph nodes; or in infraclavicular (level III axillary) lymph nodes; or in clinically detectedoo ipsilateral internal mammary lymph nodes in the presence of one or more positive level I, II axillary lymph nodes; or in more than three axillary lymph nodes and in internal mammary lymph nodes with micrometastases or macrometastases detected by sentinel lymph node biopsy but not clinically detected ∆∆; or in ipsilateral supraclavicular lymph nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN3a','Metastases in ten or more axillary lymph nodes (at least one tumor deposit greater than 2.0 mm); or metastases to the infraclavicular (level III axillary lymph) nodes');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN3b','Metastases in clinically detected◊◊ ipsilateral internal mammary lymph nodes in the presence of one or more positive axillary lymph nodes; or in more than three axillary lymph nodes and in internal mammary lymph nodes with micrometastases or macrometastases detected by sentinel lymph node biopsy but not clinically detected ∆∆');
+INSERT INTO tnmN(listID, code, description) VALUES(40, 'pN3c','Metastases in ipsilateral supraclavicular lymph nodes');
+
+INSERT INTO tnmM(listID, code, description) VALUES(40, 'MO','No clinical or radiographic evidence of distant metastases');
+INSERT INTO tnmM(listID, code, description) VALUES(40, 'M1','Distant detectable metastases as determined by classic clinical and radiographic means');
+
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'Tis','pNO','MO','Stage 0');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','pNO','MO','Stage IA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'TO','pNNmi','MO','Stage IB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','pN1mi','MO','Stage IB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'TO','pN1','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','pN1','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','pNO','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','pN1','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','pNO','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'TO','pN2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T1','pN2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T2','pN2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','pN1','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T3','pN2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4','pNO','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4','pN1','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'T4','pN2','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'Any T','pN3','MO','Stage IIIC');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(20, 'Any T','pAny N','M1','Stage IV');
+
+
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T1','Tumor ≤3 cm diameter, surrounded by lung or visceral pleura, without invasion more proximal than lobar bronchus');
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T1a','Tumor ≤2 cm in diameter');
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T1b','Tumor >2 cm but ≤3 cm in diameter');
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T2','Tumor >3 cm but ≤7 cm, or tumor with any of the following features: Involves main bronchus, >2 cm distal to carina Invades visceral pleura Associated with atelectasis or obstructive pneumonitis that extends to the hilar region but does not involve the entire lung');
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T2a','Tumor >3 cm but ≤5 cm');
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T2b','Tumor >5 cm but ≤7 cm');
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T3','Tumor >7 cm or any of the following: Directly invades any of the following: chest wall, diaphragm, phrenic nerve, mediastinal pleura, parietal pericardium, main bronchus <2 cm from carina (without involvement of carina) Atelectasis or obstructive pneumonitis of the entire lung Separate tumor nodules in the same lobe');
+INSERT INTO tnmT(listID, code, description) VALUES(50, 'T4','Tumor of any size that invades the mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, or with separate tumor nodules in a different ipsilateral lobe');
+
+INSERT INTO tnmN(listID, code, description) VALUES(50, 'N0','No regional lymph node metastases');
+INSERT INTO tnmN(listID, code, description) VALUES(50, 'N1','Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension');
+INSERT INTO tnmN(listID, code, description) VALUES(50, 'N2','Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)');
+INSERT INTO tnmN(listID, code, description) VALUES(50, 'N3','Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)');
+
+INSERT INTO tnmM(listID, code, description) VALUES(50, 'MO','No distant metastasis');
+INSERT INTO tnmM(listID, code, description) VALUES(50, 'M1','Distant metastasis');
+INSERT INTO tnmM(listID, code, description) VALUES(50, 'M1a ','Separate tumor nodule(s) in a contralateral lobe; tumor with pleural nodules or malignant pleural or pericardial effusion');
+INSERT INTO tnmM(listID, code, description) VALUES(50, 'Mlb','Distant metastasis (in extrathoracic organs)');
+
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T1a','N0','M0','Stage IA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T1b','N0','M0','Stage IA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T2a','N0','M0','Stage IB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'Tla','N1','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T1b','N1','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T2a','N1','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T2b','NO','MO','Stage IIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T2b','N1','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T3','NO','MO','Stage IIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'Tla','N2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'Tlb','N2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T2a','N2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T2b','N2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T3','N1','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T3','N2','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T4','N0','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T4','N1','MO','Stage IIIA');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'T4','N2','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'Any T','N3','MO','Stage IIIB');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'Any T','Any N','M1a','Stage IV');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(50, 'Any T','Any N','M1b','Stage IV');
+
+
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'TX','Primary tumor cannot be assessed');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'TO','No evidence of primary tumor');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'Ta','Noninvasive papillary carcinoma');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'Tis','Carcinoma in situ: "flat tumor"');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'T1','Tumor invades subepithelial connective tissue');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'T2','Tumor invades muscularis propria');
+--INSERT INTO tnmT(listID, code, description) VALUES(70, 'pT2a','Tumor invades superficial muscularis propria (inner half)');
+--INSERT INTO tnmT(listID, code, description) VALUES(70, 'pT2b','Tumor invades deep muscularis propria (outer half)');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'T3','Tumor invades perivesical tissue');
+--INSERT INTO tnmT(listID, code, description) VALUES(70, 'pT3a','Microscopically');
+--INSERT INTO tnmT(listID, code, description) VALUES(70, 'pT3b',' Macroscopically (extravesical mass) .');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'T4','Tumor invades any of the following: prostatic stroma, seminal vesicles, uterus, vagina, pelvic wall, abdominal wall');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'T4a','Tumor invades prostatic stroma, uterus, vagina');
+INSERT INTO tnmT(listID, code, description) VALUES(70, 'T4b','Tumor invades pelvic wall, abdominal wall');
+
+INSERT INTO tnmN(listID, code, description) VALUES(70, 'NX',' Lymph nodes cannot be assessed');
+INSERT INTO tnmN(listID, code, description) VALUES(70, 'N0','No lymph node metastasis');
+INSERT INTO tnmN(listID, code, description) VALUES(70, 'N1','Single regional lymph node metastasis in the true pelvis (hypogastric, obturator, external iliac, or presacral lymph node)');
+INSERT INTO tnmN(listID, code, description) VALUES(70, 'N2','Multiple regional lymph node metastasis in the true pelvis (hypogastric, obturator, external iliac, or presacral lymph node metastasis)');
+INSERT INTO tnmN(listID, code, description) VALUES(70, 'N3','Lymph node metastasis to the common iliac lymph nodes');
+
+INSERT INTO tnmM(listID, code, description) VALUES(70, 'M0','No distant metastasis');
+INSERT INTO tnmM(listID, code, description) VALUES(70, 'M1','Distant metastasis');
+
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'Ta','N0','M0','Stage 0a');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'Tis','N0','M0','Stage 0is');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'T1','N0','M0','Stage I');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'T2a','N0','M0','Stage II');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'T2b','N0','M0','Stage II');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'T3a','N0','M0','Stage III');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'T3b','N0','M0','Stage III');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'T4a','N0','M0','Stage III');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'T4b','N0','M0','Stage IV');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'Any T','N1','M0','Stage IV');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'Any T','N2','M0','Stage IV');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'Any T','N3','M0','Stage IV');
+INSERT INTO tnmStage(listID, t_code, n_code, m_code, stage) VALUES(70, 'Any T','Any N','M1','');
+
+
+create table RegimenList(pk INTEGER PRIMARY KEY, title TEXT);
+INSERT INTO RegimenList(pk, title) VALUES(10,'Adenocarcinoma-Unknown Primary');
+INSERT INTO RegimenList(pk, title) VALUES(20,'AIDS-Related Kaposi''s Sarcoma');
+INSERT INTO RegimenList(pk, title) VALUES(30,'AIDS-Related Lymphoma');
+
+
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(10,'<b>Docetaxel/Carboplatin</b>','<b>Docetaxel<sup>b</sup></b> 75 mg/m<sup>2</sup> IV over 30 minutes, day1<br><b>Carboplatin</b> AUC of 5 mg/mL/min IV over 30 minutes, day 1<br>Repeat every 21 days for a maximum of 8 countries','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(10,'<b>Gemcitabine/Carboplatin/paclitaxel</b>','<b>Gemcitabine</b> 1,000mg/m<sup>2</sup>  1V, days 1,8<br><b>Carboplatin</b> dose targeted by Calvert equation to AUC of 5 IV, day 1<br><b>Paclitaxel<sup>a</sup></b> 200 mg/m2 IV over 1 hour, day 1<br>Repeat cycle every 21 days','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(10,'<b>Gemcitabine/Cisplatin</b>','<b>Gemcitabine</b> 1,250 mg/m<sup>2</sup> IV, days 1 and 8<br><b>Cisplatin</b> 100mg/m<sup>2</sup> IV, day 1<br>Repeat every 21 days','High','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(10,'<b>Gemcitabine/Docetaxel</b>','<b>Gemcitabine</b> 1,000mg/m<sup>2</sup> IV over 30 minutes, days 1 and 8<br><b>Docetaxel<sup>b</sup></b> 75 mg/m<sup>2</sup>  IV over 1 hour, day 8<br>Repeat every 21 days for a maximum of 6 cycles','Low','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(10,'<b>Oxaliplatin Capecitabine</b>','<b>Oxaliplatin</b> 130 mg/m<sup>2</sup>  IV, day 1<br><b>Capecitabine</b> 1,000 mg/m<sup>2</sup> PO bid, days 1-14<br>Repeat cycle every 21 days for 6 cycles                                                 ','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(10,'<b>Paclitaxel/Carboplatin/Etoposide</b>','<b>Paclitaxel<sup>a</sup></b>  200mg/m<sup>2</sup> IV over 1 hour, day 1,<br><b>FOLLOWED BY</b><br> <b>Carboplatin</b> dose targeted by Calvert equation to AUC of 6 mg/mL/min IV, day 1<br><b>Etoposide</b> 50 mg/d PO alternated with 100mg/d PO, days 1-10<br> Repeat every 21 days','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(10,'<b>Interferon alfa-2b</b>','<b>Interferon alfa-2b<sup>c</sup></b>  30 million IU/m<sup>2</sup> IM <b>OR</b> SQ 3 times per week<br>Repeat until disease progression or maximal response has been achieved after 16 weeks','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(20,'<b>Liposomal daunorubicin</b>','<b>Liposomal daunorubicin</b> 40 mg/m<sup>2</sup> IV over 60 minutes<br>  Repeat every 14 days','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(20,'<b>Paclitaxel</b>','<b>Paclitaxel<sup>a</sup></b>  135 mg/m<sup>2</sup> IV over 3 hours<br> Repeat every 21 days<br><b>OR</b><br> <b>Paclitaxel<sup>a</sup></b> 100 mg/m<sup>2</sup> IV over 3 hours<br>Repeat every 14 days   ','Low','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(20,'<b>Pegylated liposomal doxorubicin</b>','<b>Pegylated liposomal doxorubicin</b> 20 mg/m<sup>2</sup> IV every 3 weeks as tolerated at an initial rate of 1 mg/min; if no infusion- related adverse events are observed, the infusiion rate can be increased to complete administration over 1 hour.','Low','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(20,'<b>CDE</b>','<b>Cyclophosphamide</b> 200mg/m<sup>2</sup>/d CIVI for 4 days<br><b>Doxorubicin</b> 12.5 mg/m<sup>2</sup>/d CIVI for 4 days<br> <b>Etoposide</b> 60 mg/m<sup>2</sup>/d CIVI for 4 days<br> Repeat every 28 days for a maximum of 8 cycles','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(30,'<b>CHOP</b>','<b>Cyclophosphamide</b> 750mg/m<sup>2</sup> IV, day 1<br> Doxorubicin 50 mg/m<sup>2</sup> IV, day 1<br><b>Vincristine<sup>d</sup></b> 1.4 mg/m<sup>2</sup> IV, day 1<br> <b>Prednisone</b> 100mg/m<sup>2</sup> PO, days 1-5<br> Repeat every 21 days; doses of cyclophosamide and doxorubicin may be reduced up to 25% in high-risk patients','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(30,'<b>CODOX-M/IVAC</b>','<u>CYCLES 1 and 3 (CODOX-M)</u><br>  <b>Cyclophosphamide</b> 800 mg/m<sup>2</sup> IV, day 1<br> <b>Cyclophosphamide<b> 200 mg/m<sup>2</sup>/d IV, days 2-5<br>  <b>Doxorubicin</b> 40 mg/m<sup>2</sup> IV, day 1<br> <b>Vincristine<sup>b</sup></b> 1.5 mg/m<sup>2</sup> IV, days 1, 8 for cycle 1,days 1, 8, 15 for cycle 2<br> <b>MTX</b> 1,200 mg/m<sup>2</sup> IV over 1 h, day 10, <b>THEN</b> 240 mg/m2/h CIVI for the next 23 hours<br> <b>Leucovorin calicium</b> 50 mg IV q6h, begining 36 hours from the start of MTX until MTX level <0.05 mcM<br> <b>Filgrastim</b> beginning 24 h from the start of leucovorin until ANC>1,000<br> <u>CNS PROPHYLAXIS</u><br> <b>Cytarabine</b> 70 mg IT, days 1, 3<br> <b>MTX<b> 12 mg IT, day 15<br> <u>CYCLES 2 AND 4 (IVAC)</u><br> <b>Ifosofamide</b> 1,500 mg/m<sup>2</sup> IV, days 1-5<br> <b>Mesna</b> 1,500 mg/m<sup>2</sup> IV, days 1-5<br> <b>Etoposide</b> 60 mg/m<sup>2</sup> IV, days 1-5<br> <b>Cytarabine</b> 2,000 mg/m<sup>2</sup> IV q 12h, days 1 and 2<br> <b>Filgrastim</b> beginning 24 h after completion of chemotherapy until ANC >1,000<br> <u>CNS PROPHYLAXIS</u><br> <b>MTX</b> 12 mg IT, day 15<br> Additional IT Treatment for CNS disease- positive patients:<br> Cycle 1: cytarabine 70 mg IT, days 1,3,5, and MTX 12 mg IT, days 15,17<br> Cycle 3: cytarabine 70 mg IT, days 1,3, and MTX 12 mg IT, day 15                                                                                                                                                               ','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(30,'<b>Dose-adjusted EPOCH</b>','<b>Etoposide</b> 50 mg/m<sup>2</sup>/d CIVI, days 1-4 (96 hours)<br> <b>Doxrubicin</b> 10 mg/m<sup>2</sup>/d CIVI, days 1-4 (96 hours)<br> <b>Vincristine<sup>d</sup></b> 0.4 mg/m<sup>2</sup>/d /CIVI, days 1-4 (96 hours)<br> <b>Cyclophosphamide</b> Cycle1: 375 mg/m<sup>2</sup> IV, day 5, if CD4+ cells >= 100/mm<sup>3</sup>; 187 mg/m<sup>2</sup> IV, day 5, if CD4+ cells<100/mm<sup>3</sup><br> After cycle 1: increase dose by 187 mg if nadir ANC > 500/mvL or platelets <25,000/mcL<br> <b>Prednisone</b> 60 mg/m<sup>2</sup>/d PO, days 1-5<br> <b>Filgrastim</b> 5 mcg/kg/d SQ, day 6, and until ANC >5,000/mcl<br> Repeat every 21 days','Moderate','');
+INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(30,'<b>Bevacizumab/Irinotecan</b>','<b>Bevacizumab</b> 15 mg/kg IV<br> Repeat Every 21 Days<br> <b>Irinotecan</b> 350 mg/m<sup>2</sup> with enzyme-inducing antiepileptic drugs, days 1, 8, 22, 29<br> <b>OR</b><br> <b>Irinotecan</b> 125 mg/m<sup>2</sup> with non-enzyme-including antiepileptic drugs, IV, days 1, 8, 22, 29<br> Repeat every 6 weeks','Moderate','');
+
+
+create table RegimenDetail(pk INTEGER PRIMARY KEY, parentPK INTEGER, name TEXT, schedule TEXT, emetogenic_potential TEXT, reference TEXT);
+
+--INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(100,'<b>Docetaxel/Carboplatin</b>','<b>Docetaxel<sup>b</sup></b> 75 mg/m<sup>2</sup> IV over 30 minutes, day1<br><b>Carboplatin</b> AUC of 5 mg/mL/min IV over 30 minutes, day --1<br>Repeat every 21 days for a maximum of 8 countries','Moderate','');
+
+--INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(100, 'Carbo-Tax', '<b>Carboplatin</b> dose targeted by Calvert equation to AUC of 6 mg/mL/min IV over 30 minutes<br><b>FOLLOWED BY</b><br><b>Filgrastim</b>300 mcg/d SQ, days --5-12<br><i>Repeat every 21 days</i>', 'Moderate', 'Briasoulis E. Kalofonos H,etc');
+
+
+--INSERT INTO RegimenDetail(parentPK, name, schedule, emetogenic_potential, reference) VALUES(200, 'ABVD', '<b>Doxorubicin</b> 25 mg/m<sup>2</sup>/d IV, days 1, 15        <b>Bleomycin</b> 10 units/m<sup>2</sup>/d IV, days 1, 15       <b>Vinblastine</b> 6 mg/m<sup>2</sup>/d IV, days 1, 15            <b>Dacarbazine</b> 375 mg/m<sup>2</sup>/d IV, days 1, 15      Repeat every 28 days', 'High', 'Harker WG, Kushlan P, Rosenberg SA. Combination chemotherapy for advanced Hodgkin''s disease after failure of MOPP: ABVD and B-CAVe. $Ann Intern Med. 1984;  101(4):440-446$.                                                                                                               Longo DL, Glastein E, Duffey PL,et al.                               Alternating MOPP and ABVD chemotherapy plus mantle-field radiation therapy in patients with massive mediastinal Hodgikin''s disease. $J Clin Oncol. 1997; 15(11): 3338-3346$.     ');
+
+

@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		080959720EA577C5007A020A /* Regimen.m in Sources */ = {isa = PBXBuildFile; fileRef = 080959710EA577C5007A020A /* Regimen.m */; };
+		08095A6A0EA58456007A020A /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08095A690EA58456007A020A /* libsqlite3.0.dylib */; };
+		08095DF80EA80FA8007A020A /* CalculatorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08095DF70EA80FA8007A020A /* CalculatorVC.xib */; };
+		08BDB9C50EAD2EA3005D28DE /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 08BDB9C30EAD2EA3005D28DE /* check.png */; };
+		08BDB9C60EAD2EA3005D28DE /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 08BDB9C40EAD2EA3005D28DE /* uncheck.png */; };
+		08ED80690EAA7B77005B972A /* RegimenDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 08ED80680EAA7B77005B972A /* RegimenDetail.m */; };
+		1D3623260D0F684500981E51 /* OncologyAppAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OncologyAppAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		B5120D3816D30EF6009FA095 /* CancerListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5120D3716D30EF6009FA095 /* CancerListCell.xib */; };
+		B5120D3C16D30F32009FA095 /* CancerListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5120D3B16D30F32009FA095 /* CancerListCell.m */; };
+		B51E40F61742ACE000A9C89A /* Regimen_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E40F51742ACE000A9C89A /* Regimen_Storyboard.storyboard */; };
+		B51E40F81742BB4C00A9C89A /* SubCancer1Regimen_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E40F71742BB4C00A9C89A /* SubCancer1Regimen_iPhone.storyboard */; };
+		B51E40FB1742BB8C00A9C89A /* SubCancerListViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = B51E40FA1742BB8C00A9C89A /* SubCancerListViewController1.m */; };
+		B51E40FE1742BE8800A9C89A /* SubCancerListViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = B51E40FD1742BE8700A9C89A /* SubCancerListViewController2.m */; };
+		B51E41001742BEC800A9C89A /* SubCancer2Regimen_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51E40FF1742BEC800A9C89A /* SubCancer2Regimen_iPhone.storyboard */; };
+		B52604C716A1D1BA0074A08A /* Lymphoma_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52604C616A1D1BA0074A08A /* Lymphoma_iphone.storyboard */; };
+		B52604CB16A1D3880074A08A /* LymphomaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52604CA16A1D3880074A08A /* LymphomaListViewController.m */; };
+		B52604CE16A1E96E0074A08A /* LymphomaDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52604CD16A1E96E0074A08A /* LymphomaDetailViewController.m */; };
+		B52604D016A2016A0074A08A /* LymphomaDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52604CF16A2016A0074A08A /* LymphomaDetailViewController.xib */; };
+		B52604D216A2184B0074A08A /* MyelomaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52604D116A2184A0074A08A /* MyelomaViewController.xib */; };
+		B52604D516A219270074A08A /* MyelomaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52604D416A219270074A08A /* MyelomaViewController.m */; };
+		B53A2D241C667D3A001A21EA /* Gen2BrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53A2D221C667D3A001A21EA /* Gen2BrandViewController.m */; };
+		B53A2D251C667D3A001A21EA /* Gen2BrandViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53A2D231C667D3A001A21EA /* Gen2BrandViewController.xib */; };
+		B54DDB46163DFF8D00830C25 /* StagingDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54DDB45163DFF8D00830C25 /* StagingDetailViewController.m */; };
+		B55D090816151D8900A6BD82 /* CancerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55D090716151D8900A6BD82 /* CancerListViewController.m */; };
+		B55D090C16151E4600A6BD82 /* CancerRegimen_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55D090B16151E4600A6BD82 /* CancerRegimen_iPhone.storyboard */; };
+		B55D091716153C6000A6BD82 /* RegimenListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55D091616153C6000A6BD82 /* RegimenListViewController.m */; };
+		B55D091A161542B100A6BD82 /* RegimenDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B55D0919161542B100A6BD82 /* RegimenDetailViewController.m */; };
+		B55D0921161751DF00A6BD82 /* RegimenDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B55D0920161751DF00A6BD82 /* RegimenDetailViewController.xib */; };
+		B5664A2516475B2B0058D6C5 /* BSACalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A2416475B2B0058D6C5 /* BSACalculatorViewController.xib */; };
+		B5664A2716475B3D0058D6C5 /* BSACalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5664A2616475B3D0058D6C5 /* BSACalculatorViewController.m */; };
+		B5664A3316488BEE0058D6C5 /* ReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5664A2916488BED0058D6C5 /* ReferenceViewController.m */; };
+		B5664A3416488BEE0058D6C5 /* CcrCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5664A2A16488BED0058D6C5 /* CcrCalculatorViewController.m */; };
+		B5664A3516488BEE0058D6C5 /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5664A2C16488BED0058D6C5 /* TemperatureViewController.m */; };
+		B5664A3616488BEE0058D6C5 /* AbsNeutrophilCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5664A3016488BED0058D6C5 /* AbsNeutrophilCountViewController.m */; };
+		B5664A3716488BEE0058D6C5 /* BMIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5664A3116488BEE0058D6C5 /* BMIViewController.m */; };
+		B5664A4116488C670058D6C5 /* CcrCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3816488C670058D6C5 /* CcrCalculatorViewController.xib */; };
+		B5664A4216488C670058D6C5 /* CcrCalculatorReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3916488C670058D6C5 /* CcrCalculatorReference.xib */; };
+		B5664A4316488C670058D6C5 /* TemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3A16488C670058D6C5 /* TemperatureViewController.xib */; };
+		B5664A4416488C670058D6C5 /* TemperatureReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3B16488C670058D6C5 /* TemperatureReference.xib */; };
+		B5664A4516488C670058D6C5 /* AbsNeutrophilCountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3C16488C670058D6C5 /* AbsNeutrophilCountViewController.xib */; };
+		B5664A4616488C670058D6C5 /* BMIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3D16488C670058D6C5 /* BMIViewController.xib */; };
+		B5664A4716488C670058D6C5 /* AbsNeutrophilCountReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3E16488C670058D6C5 /* AbsNeutrophilCountReference.xib */; };
+		B5664A4816488C670058D6C5 /* BMIReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A3F16488C670058D6C5 /* BMIReference.xib */; };
+		B5664A4916488C670058D6C5 /* BSAReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5664A4016488C670058D6C5 /* BSAReference.xib */; };
+		B5664A4C1655C4890058D6C5 /* StagingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5664A4B1655C4890058D6C5 /* StagingListViewController.m */; };
+		B582F4221C92456E00C51A8D /* Gen2BrandTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B582F4201C92456E00C51A8D /* Gen2BrandTableViewCell.m */; };
+		B582F4231C92456E00C51A8D /* Gen2BrandTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B582F4211C92456E00C51A8D /* Gen2BrandTableViewCell.xib */; };
+		B5860DD417EBFE9500A942D5 /* OncApp57.png in Resources */ = {isa = PBXBuildFile; fileRef = B5860DD317EBFE9500A942D5 /* OncApp57.png */; };
+		B5860DD517EBFEA900A942D5 /* OncApp114.png in Resources */ = {isa = PBXBuildFile; fileRef = B5860DD117EBFD5800A942D5 /* OncApp114.png */; };
+		B58A21EE1CAA0F7A008C0AC9 /* cancerregimens.1.1.0.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = B58A21ED1CAA0F7A008C0AC9 /* cancerregimens.1.1.0.sqlite */; };
+		B5993E2916CB3A310066853F /* CPCalculatorReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5993E2816CB3A310066853F /* CPCalculatorReference.xib */; };
+		B5993E2C16CB3A550066853F /* CPCalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5993E2B16CB3A550066853F /* CPCalculatorViewController.m */; };
+		B5993E3016CB438D0066853F /* CPCalculatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5993E2F16CB438D0066853F /* CPCalculatorViewController.xib */; };
+		B5B0097C167E4368009C1C7B /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0097B167E4368009C1C7B /* Util.m */; };
+		B5B0097F167EC98E009C1C7B /* StagingTCStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B0097E167EC98E009C1C7B /* StagingTCStoryboard_iPhone.storyboard */; };
+		B5B00982167ECA1B009C1C7B /* StagingSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B00981167ECA1B009C1C7B /* StagingSViewController.m */; };
+		B5B0098516800EE5009C1C7B /* UserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0098416800EE5009C1C7B /* UserAgent.m */; };
+		B5B0098816800FE4009C1C7B /* UIWebView+UserAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B0098716800FE4009C1C7B /* UIWebView+UserAgent.m */; };
+		B5B1EC4F16ADC2A000862B5B /* PrognosticScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1EC4E16ADC2A000862B5B /* PrognosticScoresViewController.m */; };
+		B5B1EC5116ADDACC00862B5B /* PrognosticScales_iphone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B1EC5016ADDACC00862B5B /* PrognosticScales_iphone_Storyboard.storyboard */; };
+		B5B1EC5316ADDF8100862B5B /* PrognosticScoresDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B1EC5216ADDF8100862B5B /* PrognosticScoresDetailViewController.xib */; };
+		B5B1EC5616ADDFBB00862B5B /* PrognosticScoresDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1EC5516ADDFBB00862B5B /* PrognosticScoresDetailViewController.m */; };
+		B5B1EC5816AE343200862B5B /* GenericGroupedTableView_iphone_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B1EC5716AE343200862B5B /* GenericGroupedTableView_iphone_Storyboard.storyboard */; };
+		B5B1EC5B16AE347500862B5B /* GenericGroupedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1EC5A16AE347500862B5B /* GenericGroupedTableViewController.m */; };
+		B5B1EC6A16B434F000862B5B /* PrognosticCalculatorRevisedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1EC6916B434EF00862B5B /* PrognosticCalculatorRevisedViewController.m */; };
+		B5B1EC7016B4452300862B5B /* PrognosticRevisedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5B1EC6F16B4452300862B5B /* PrognosticRevisedViewController.xib */; };
+		B5BC7B7617F3BB8700F1A3E8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B5BC7B7517F3BB8700F1A3E8 /* Default-568h@2x.png */; };
+		B5C1D95F16D00FB80026DE6B /* ECOGTCSubGroups_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C1D95E16D00FB80026DE6B /* ECOGTCSubGroups_iphone.storyboard */; };
+		B5C1D96516D012070026DE6B /* ECOGTCSubGroupsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C1D96416D012070026DE6B /* ECOGTCSubGroupsViewController.m */; };
+		B5CB681418594D8A00508F5F /* OncApp120.png in Resources */ = {isa = PBXBuildFile; fileRef = B5CB681318594D8A00508F5F /* OncApp120.png */; };
+		B5F3AD6F16E829C700DB5193 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F3AD6D16E829C700DB5193 /* down.png */; };
+		B5F3AD7016E829C700DB5193 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = B5F3AD6E16E829C700DB5193 /* up.png */; };
+		B5F529BB163454ED0056EF95 /* iPhone.css in Resources */ = {isa = PBXBuildFile; fileRef = B5F529BA163454ED0056EF95 /* iPhone.css */; };
+		B5F7C3CA163C608300B78857 /* RegimenReferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F7C3C8163C608300B78857 /* RegimenReferenceViewController.m */; };
+		B5F7C3CB163C608300B78857 /* RegimenReferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F7C3C9163C608300B78857 /* RegimenReferenceViewController.xib */; };
+		B5F7C3CF163D9EB400B78857 /* StagingTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F7C3CD163D9EB400B78857 /* StagingTViewController.m */; };
+		B5F7C3D2163DA4C200B78857 /* StagingCalculator_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5F7C3D1163DA4C200B78857 /* StagingCalculator_iPhone.storyboard */; };
+		B5F7C3D5163DB31800B78857 /* StagingNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F7C3D4163DB31800B78857 /* StagingNViewController.m */; };
+		B5F7C3D8163DB63300B78857 /* StagingMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F7C3D7163DB63300B78857 /* StagingMViewController.m */; };
+		B5F7C3DA163DC13D00B78857 /* StagingTNMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F7C3D9163DC13D00B78857 /* StagingTNMCell.xib */; };
+		B5F7C3DD163DC1DF00B78857 /* StagingTNMCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F7C3DC163DC1DE00B78857 /* StagingTNMCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		080959700EA577C5007A020A /* Regimen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regimen.h; sourceTree = "<group>"; };
+		080959710EA577C5007A020A /* Regimen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Regimen.m; sourceTree = "<group>"; };
+		08095A690EA58456007A020A /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		08095DCF0EA80C81007A020A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		08095DF70EA80FA8007A020A /* CalculatorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorVC.xib; sourceTree = "<group>"; };
+		08BDB9C30EAD2EA3005D28DE /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		08BDB9C40EAD2EA3005D28DE /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
+		08ED80670EAA7B77005B972A /* RegimenDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegimenDetail.h; sourceTree = "<group>"; };
+		08ED80680EAA7B77005B972A /* RegimenDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegimenDetail.m; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* OncologyAppAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OncologyAppAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* OncologyAppAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OncologyAppAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* OncAmigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OncAmigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* OncAmigo_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OncAmigo_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5120D3716D30EF6009FA095 /* CancerListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CancerListCell.xib; path = Resources/CancerListCell.xib; sourceTree = "<group>"; };
+		B5120D3A16D30F32009FA095 /* CancerListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CancerListCell.h; path = Classes/CancerListCell.h; sourceTree = "<group>"; };
+		B5120D3B16D30F32009FA095 /* CancerListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CancerListCell.m; path = Classes/CancerListCell.m; sourceTree = "<group>"; };
+		B51E40F51742ACE000A9C89A /* Regimen_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Regimen_Storyboard.storyboard; path = Resources/Regimen_Storyboard.storyboard; sourceTree = "<group>"; };
+		B51E40F71742BB4C00A9C89A /* SubCancer1Regimen_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SubCancer1Regimen_iPhone.storyboard; path = Resources/SubCancer1Regimen_iPhone.storyboard; sourceTree = "<group>"; };
+		B51E40F91742BB8C00A9C89A /* SubCancerListViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubCancerListViewController1.h; path = Classes/SubCancerListViewController1.h; sourceTree = "<group>"; };
+		B51E40FA1742BB8C00A9C89A /* SubCancerListViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubCancerListViewController1.m; path = Classes/SubCancerListViewController1.m; sourceTree = "<group>"; };
+		B51E40FC1742BE8700A9C89A /* SubCancerListViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubCancerListViewController2.h; path = Classes/SubCancerListViewController2.h; sourceTree = "<group>"; };
+		B51E40FD1742BE8700A9C89A /* SubCancerListViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SubCancerListViewController2.m; path = Classes/SubCancerListViewController2.m; sourceTree = "<group>"; };
+		B51E40FF1742BEC800A9C89A /* SubCancer2Regimen_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SubCancer2Regimen_iPhone.storyboard; path = Resources/SubCancer2Regimen_iPhone.storyboard; sourceTree = "<group>"; };
+		B52604C616A1D1BA0074A08A /* Lymphoma_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Lymphoma_iphone.storyboard; path = Resources/Lymphoma_iphone.storyboard; sourceTree = "<group>"; };
+		B52604C916A1D3880074A08A /* LymphomaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LymphomaListViewController.h; path = Classes/LymphomaListViewController.h; sourceTree = "<group>"; };
+		B52604CA16A1D3880074A08A /* LymphomaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LymphomaListViewController.m; path = Classes/LymphomaListViewController.m; sourceTree = "<group>"; };
+		B52604CC16A1E96E0074A08A /* LymphomaDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LymphomaDetailViewController.h; path = Classes/LymphomaDetailViewController.h; sourceTree = "<group>"; };
+		B52604CD16A1E96E0074A08A /* LymphomaDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LymphomaDetailViewController.m; path = Classes/LymphomaDetailViewController.m; sourceTree = "<group>"; };
+		B52604CF16A2016A0074A08A /* LymphomaDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LymphomaDetailViewController.xib; path = Resources/LymphomaDetailViewController.xib; sourceTree = "<group>"; };
+		B52604D116A2184A0074A08A /* MyelomaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyelomaViewController.xib; path = Resources/MyelomaViewController.xib; sourceTree = "<group>"; };
+		B52604D316A219260074A08A /* MyelomaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyelomaViewController.h; path = Classes/MyelomaViewController.h; sourceTree = "<group>"; };
+		B52604D416A219270074A08A /* MyelomaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyelomaViewController.m; path = Classes/MyelomaViewController.m; sourceTree = "<group>"; };
+		B53A2D211C667D3A001A21EA /* Gen2BrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gen2BrandViewController.h; sourceTree = "<group>"; };
+		B53A2D221C667D3A001A21EA /* Gen2BrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gen2BrandViewController.m; sourceTree = "<group>"; };
+		B53A2D231C667D3A001A21EA /* Gen2BrandViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Gen2BrandViewController.xib; path = Classes/Gen2BrandViewController.xib; sourceTree = "<group>"; };
+		B54DDB44163DFF8D00830C25 /* StagingDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagingDetailViewController.h; path = Classes/StagingDetailViewController.h; sourceTree = "<group>"; };
+		B54DDB45163DFF8D00830C25 /* StagingDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StagingDetailViewController.m; path = Classes/StagingDetailViewController.m; sourceTree = "<group>"; };
+		B55D090616151D8800A6BD82 /* CancerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CancerListViewController.h; path = Classes/CancerListViewController.h; sourceTree = "<group>"; };
+		B55D090716151D8900A6BD82 /* CancerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CancerListViewController.m; path = Classes/CancerListViewController.m; sourceTree = "<group>"; };
+		B55D090B16151E4600A6BD82 /* CancerRegimen_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = CancerRegimen_iPhone.storyboard; path = Resources/CancerRegimen_iPhone.storyboard; sourceTree = "<group>"; };
+		B55D091516153C6000A6BD82 /* RegimenListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegimenListViewController.h; path = Classes/RegimenListViewController.h; sourceTree = "<group>"; };
+		B55D091616153C6000A6BD82 /* RegimenListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegimenListViewController.m; path = Classes/RegimenListViewController.m; sourceTree = "<group>"; };
+		B55D0918161542B100A6BD82 /* RegimenDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegimenDetailViewController.h; path = Classes/RegimenDetailViewController.h; sourceTree = "<group>"; };
+		B55D0919161542B100A6BD82 /* RegimenDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegimenDetailViewController.m; path = Classes/RegimenDetailViewController.m; sourceTree = "<group>"; };
+		B55D0920161751DF00A6BD82 /* RegimenDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegimenDetailViewController.xib; path = Resources/RegimenDetailViewController.xib; sourceTree = "<group>"; };
+		B5664A2416475B2B0058D6C5 /* BSACalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BSACalculatorViewController.xib; path = Resources/BSACalculatorViewController.xib; sourceTree = "<group>"; };
+		B5664A2616475B3D0058D6C5 /* BSACalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BSACalculatorViewController.m; path = Classes/BSACalculatorViewController.m; sourceTree = "<group>"; };
+		B5664A2816475B480058D6C5 /* BSACalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BSACalculatorViewController.h; path = Classes/BSACalculatorViewController.h; sourceTree = "<group>"; };
+		B5664A2916488BED0058D6C5 /* ReferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReferenceViewController.m; sourceTree = "<group>"; };
+		B5664A2A16488BED0058D6C5 /* CcrCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CcrCalculatorViewController.m; sourceTree = "<group>"; };
+		B5664A2B16488BED0058D6C5 /* ReferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReferenceViewController.h; sourceTree = "<group>"; };
+		B5664A2C16488BED0058D6C5 /* TemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureViewController.m; sourceTree = "<group>"; };
+		B5664A2D16488BED0058D6C5 /* TemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureViewController.h; sourceTree = "<group>"; };
+		B5664A2E16488BED0058D6C5 /* CcrCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CcrCalculatorViewController.h; sourceTree = "<group>"; };
+		B5664A2F16488BED0058D6C5 /* AbsNeutrophilCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbsNeutrophilCountViewController.h; sourceTree = "<group>"; };
+		B5664A3016488BED0058D6C5 /* AbsNeutrophilCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsNeutrophilCountViewController.m; sourceTree = "<group>"; };
+		B5664A3116488BEE0058D6C5 /* BMIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BMIViewController.m; sourceTree = "<group>"; };
+		B5664A3216488BEE0058D6C5 /* BMIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BMIViewController.h; sourceTree = "<group>"; };
+		B5664A3816488C670058D6C5 /* CcrCalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CcrCalculatorViewController.xib; path = Resources/CcrCalculatorViewController.xib; sourceTree = "<group>"; };
+		B5664A3916488C670058D6C5 /* CcrCalculatorReference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CcrCalculatorReference.xib; path = Resources/CcrCalculatorReference.xib; sourceTree = "<group>"; };
+		B5664A3A16488C670058D6C5 /* TemperatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TemperatureViewController.xib; path = Resources/TemperatureViewController.xib; sourceTree = "<group>"; };
+		B5664A3B16488C670058D6C5 /* TemperatureReference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TemperatureReference.xib; path = Resources/TemperatureReference.xib; sourceTree = "<group>"; };
+		B5664A3C16488C670058D6C5 /* AbsNeutrophilCountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AbsNeutrophilCountViewController.xib; path = Resources/AbsNeutrophilCountViewController.xib; sourceTree = "<group>"; };
+		B5664A3D16488C670058D6C5 /* BMIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BMIViewController.xib; path = Resources/BMIViewController.xib; sourceTree = "<group>"; };
+		B5664A3E16488C670058D6C5 /* AbsNeutrophilCountReference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AbsNeutrophilCountReference.xib; path = Resources/AbsNeutrophilCountReference.xib; sourceTree = "<group>"; };
+		B5664A3F16488C670058D6C5 /* BMIReference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BMIReference.xib; path = Resources/BMIReference.xib; sourceTree = "<group>"; };
+		B5664A4016488C670058D6C5 /* BSAReference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BSAReference.xib; path = Resources/BSAReference.xib; sourceTree = "<group>"; };
+		B5664A4A1655C4890058D6C5 /* StagingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagingListViewController.h; path = Classes/StagingListViewController.h; sourceTree = "<group>"; };
+		B5664A4B1655C4890058D6C5 /* StagingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StagingListViewController.m; path = Classes/StagingListViewController.m; sourceTree = "<group>"; };
+		B582F41F1C92456E00C51A8D /* Gen2BrandTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gen2BrandTableViewCell.h; sourceTree = "<group>"; };
+		B582F4201C92456E00C51A8D /* Gen2BrandTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gen2BrandTableViewCell.m; sourceTree = "<group>"; };
+		B582F4211C92456E00C51A8D /* Gen2BrandTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Gen2BrandTableViewCell.xib; path = Classes/Gen2BrandTableViewCell.xib; sourceTree = "<group>"; };
+		B5860DCB17EBFBDD00A942D5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B5860DCD17EBFBE300A942D5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B5860DCF17EBFBF000A942D5 /* OncApp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OncApp.png; sourceTree = "<group>"; };
+		B5860DD117EBFD5800A942D5 /* OncApp114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OncApp114.png; sourceTree = "<group>"; };
+		B5860DD317EBFE9500A942D5 /* OncApp57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OncApp57.png; sourceTree = "<group>"; };
+		B58A21ED1CAA0F7A008C0AC9 /* cancerregimens.1.1.0.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = cancerregimens.1.1.0.sqlite; sourceTree = "<group>"; };
+		B5993E2816CB3A310066853F /* CPCalculatorReference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CPCalculatorReference.xib; path = Resources/CPCalculatorReference.xib; sourceTree = "<group>"; };
+		B5993E2A16CB3A550066853F /* CPCalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCalculatorViewController.h; sourceTree = "<group>"; };
+		B5993E2B16CB3A550066853F /* CPCalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCalculatorViewController.m; sourceTree = "<group>"; };
+		B5993E2F16CB438D0066853F /* CPCalculatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CPCalculatorViewController.xib; path = Resources/CPCalculatorViewController.xib; sourceTree = "<group>"; };
+		B5B0097A167E4368009C1C7B /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Util.h; path = Classes/Util.h; sourceTree = "<group>"; };
+		B5B0097B167E4368009C1C7B /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Util.m; path = Classes/Util.m; sourceTree = "<group>"; };
+		B5B0097E167EC98E009C1C7B /* StagingTCStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = StagingTCStoryboard_iPhone.storyboard; path = Resources/StagingTCStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B5B00980167ECA1B009C1C7B /* StagingSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagingSViewController.h; path = Classes/StagingSViewController.h; sourceTree = "<group>"; };
+		B5B00981167ECA1B009C1C7B /* StagingSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StagingSViewController.m; path = Classes/StagingSViewController.m; sourceTree = "<group>"; };
+		B5B0098316800EE4009C1C7B /* UserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserAgent.h; path = Classes/UserAgent.h; sourceTree = "<group>"; };
+		B5B0098416800EE5009C1C7B /* UserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserAgent.m; path = Classes/UserAgent.m; sourceTree = "<group>"; };
+		B5B0098616800FE3009C1C7B /* UIWebView+UserAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWebView+UserAgent.h"; path = "Classes/UIWebView+UserAgent.h"; sourceTree = "<group>"; };
+		B5B0098716800FE4009C1C7B /* UIWebView+UserAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+UserAgent.m"; path = "Classes/UIWebView+UserAgent.m"; sourceTree = "<group>"; };
+		B5B1EC4D16ADC2A000862B5B /* PrognosticScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrognosticScoresViewController.h; path = Classes/PrognosticScoresViewController.h; sourceTree = "<group>"; };
+		B5B1EC4E16ADC2A000862B5B /* PrognosticScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrognosticScoresViewController.m; path = Classes/PrognosticScoresViewController.m; sourceTree = "<group>"; };
+		B5B1EC5016ADDACC00862B5B /* PrognosticScales_iphone_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PrognosticScales_iphone_Storyboard.storyboard; path = Resources/PrognosticScales_iphone_Storyboard.storyboard; sourceTree = "<group>"; };
+		B5B1EC5216ADDF8100862B5B /* PrognosticScoresDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrognosticScoresDetailViewController.xib; path = Resources/PrognosticScoresDetailViewController.xib; sourceTree = "<group>"; };
+		B5B1EC5416ADDFBB00862B5B /* PrognosticScoresDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrognosticScoresDetailViewController.h; path = Classes/PrognosticScoresDetailViewController.h; sourceTree = "<group>"; };
+		B5B1EC5516ADDFBB00862B5B /* PrognosticScoresDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrognosticScoresDetailViewController.m; path = Classes/PrognosticScoresDetailViewController.m; sourceTree = "<group>"; };
+		B5B1EC5716AE343200862B5B /* GenericGroupedTableView_iphone_Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = GenericGroupedTableView_iphone_Storyboard.storyboard; path = Resources/GenericGroupedTableView_iphone_Storyboard.storyboard; sourceTree = "<group>"; };
+		B5B1EC5916AE347400862B5B /* GenericGroupedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GenericGroupedTableViewController.h; path = Classes/GenericGroupedTableViewController.h; sourceTree = "<group>"; };
+		B5B1EC5A16AE347500862B5B /* GenericGroupedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GenericGroupedTableViewController.m; path = Classes/GenericGroupedTableViewController.m; sourceTree = "<group>"; };
+		B5B1EC6816B434EE00862B5B /* PrognosticCalculatorRevisedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrognosticCalculatorRevisedViewController.h; path = Classes/PrognosticCalculatorRevisedViewController.h; sourceTree = "<group>"; };
+		B5B1EC6916B434EF00862B5B /* PrognosticCalculatorRevisedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrognosticCalculatorRevisedViewController.m; path = Classes/PrognosticCalculatorRevisedViewController.m; sourceTree = "<group>"; };
+		B5B1EC6F16B4452300862B5B /* PrognosticRevisedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PrognosticRevisedViewController.xib; path = Resources/PrognosticRevisedViewController.xib; sourceTree = "<group>"; };
+		B5BC7B7517F3BB8700F1A3E8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B5C1D95E16D00FB80026DE6B /* ECOGTCSubGroups_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ECOGTCSubGroups_iphone.storyboard; path = Resources/ECOGTCSubGroups_iphone.storyboard; sourceTree = "<group>"; };
+		B5C1D96316D012070026DE6B /* ECOGTCSubGroupsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ECOGTCSubGroupsViewController.h; path = Classes/ECOGTCSubGroupsViewController.h; sourceTree = "<group>"; };
+		B5C1D96416D012070026DE6B /* ECOGTCSubGroupsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ECOGTCSubGroupsViewController.m; path = Classes/ECOGTCSubGroupsViewController.m; sourceTree = "<group>"; };
+		B5CB681318594D8A00508F5F /* OncApp120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OncApp120.png; sourceTree = "<group>"; };
+		B5F3AD6D16E829C700DB5193 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = down.png; path = Resources/down.png; sourceTree = "<group>"; };
+		B5F3AD6E16E829C700DB5193 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = up.png; path = Resources/up.png; sourceTree = "<group>"; };
+		B5F529BA163454ED0056EF95 /* iPhone.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = iPhone.css; path = Resources/iPhone.css; sourceTree = "<group>"; };
+		B5F7C3C7163C608300B78857 /* RegimenReferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegimenReferenceViewController.h; path = Classes/RegimenReferenceViewController.h; sourceTree = "<group>"; };
+		B5F7C3C8163C608300B78857 /* RegimenReferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegimenReferenceViewController.m; path = Classes/RegimenReferenceViewController.m; sourceTree = "<group>"; };
+		B5F7C3C9163C608300B78857 /* RegimenReferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegimenReferenceViewController.xib; path = Classes/RegimenReferenceViewController.xib; sourceTree = "<group>"; };
+		B5F7C3CC163D9EB400B78857 /* StagingTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagingTViewController.h; path = Classes/StagingTViewController.h; sourceTree = "<group>"; };
+		B5F7C3CD163D9EB400B78857 /* StagingTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StagingTViewController.m; path = Classes/StagingTViewController.m; sourceTree = "<group>"; };
+		B5F7C3D1163DA4C200B78857 /* StagingCalculator_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = StagingCalculator_iPhone.storyboard; path = Resources/StagingCalculator_iPhone.storyboard; sourceTree = "<group>"; };
+		B5F7C3D3163DB31800B78857 /* StagingNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagingNViewController.h; path = Classes/StagingNViewController.h; sourceTree = "<group>"; };
+		B5F7C3D4163DB31800B78857 /* StagingNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StagingNViewController.m; path = Classes/StagingNViewController.m; sourceTree = "<group>"; };
+		B5F7C3D6163DB63300B78857 /* StagingMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagingMViewController.h; path = Classes/StagingMViewController.h; sourceTree = "<group>"; };
+		B5F7C3D7163DB63300B78857 /* StagingMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StagingMViewController.m; path = Classes/StagingMViewController.m; sourceTree = "<group>"; };
+		B5F7C3D9163DC13D00B78857 /* StagingTNMCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = StagingTNMCell.xib; path = Resources/StagingTNMCell.xib; sourceTree = "<group>"; };
+		B5F7C3DB163DC1DE00B78857 /* StagingTNMCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StagingTNMCell.h; path = Classes/StagingTNMCell.h; sourceTree = "<group>"; };
+		B5F7C3DC163DC1DE00B78857 /* StagingTNMCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StagingTNMCell.m; path = Classes/StagingTNMCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				08095A6A0EA58456007A020A /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B51E40FC1742BE8700A9C89A /* SubCancerListViewController2.h */,
+				B51E40FD1742BE8700A9C89A /* SubCancerListViewController2.m */,
+				B51E40F91742BB8C00A9C89A /* SubCancerListViewController1.h */,
+				B51E40FA1742BB8C00A9C89A /* SubCancerListViewController1.m */,
+				B5664A2F16488BED0058D6C5 /* AbsNeutrophilCountViewController.h */,
+				B5664A3016488BED0058D6C5 /* AbsNeutrophilCountViewController.m */,
+				B5664A3216488BEE0058D6C5 /* BMIViewController.h */,
+				B5664A3116488BEE0058D6C5 /* BMIViewController.m */,
+				B5664A2816475B480058D6C5 /* BSACalculatorViewController.h */,
+				B5664A2616475B3D0058D6C5 /* BSACalculatorViewController.m */,
+				B5120D3A16D30F32009FA095 /* CancerListCell.h */,
+				B5120D3B16D30F32009FA095 /* CancerListCell.m */,
+				B55D090616151D8800A6BD82 /* CancerListViewController.h */,
+				B55D090716151D8900A6BD82 /* CancerListViewController.m */,
+				B5664A2E16488BED0058D6C5 /* CcrCalculatorViewController.h */,
+				B5664A2A16488BED0058D6C5 /* CcrCalculatorViewController.m */,
+				08095DCF0EA80C81007A020A /* Constants.h */,
+				B5993E2A16CB3A550066853F /* CPCalculatorViewController.h */,
+				B5993E2B16CB3A550066853F /* CPCalculatorViewController.m */,
+				B5C1D96316D012070026DE6B /* ECOGTCSubGroupsViewController.h */,
+				B5C1D96416D012070026DE6B /* ECOGTCSubGroupsViewController.m */,
+				B5B1EC5916AE347400862B5B /* GenericGroupedTableViewController.h */,
+				B5B1EC5A16AE347500862B5B /* GenericGroupedTableViewController.m */,
+				B52604CC16A1E96E0074A08A /* LymphomaDetailViewController.h */,
+				B52604CD16A1E96E0074A08A /* LymphomaDetailViewController.m */,
+				B52604C916A1D3880074A08A /* LymphomaListViewController.h */,
+				B52604CA16A1D3880074A08A /* LymphomaListViewController.m */,
+				B52604D316A219260074A08A /* MyelomaViewController.h */,
+				B52604D416A219270074A08A /* MyelomaViewController.m */,
+				1D3623240D0F684500981E51 /* OncologyAppAppDelegate.h */,
+				1D3623250D0F684500981E51 /* OncologyAppAppDelegate.m */,
+				B5B1EC6816B434EE00862B5B /* PrognosticCalculatorRevisedViewController.h */,
+				B5B1EC6916B434EF00862B5B /* PrognosticCalculatorRevisedViewController.m */,
+				B5B1EC5416ADDFBB00862B5B /* PrognosticScoresDetailViewController.h */,
+				B5B1EC5516ADDFBB00862B5B /* PrognosticScoresDetailViewController.m */,
+				B5B1EC4D16ADC2A000862B5B /* PrognosticScoresViewController.h */,
+				B5B1EC4E16ADC2A000862B5B /* PrognosticScoresViewController.m */,
+				B5664A2B16488BED0058D6C5 /* ReferenceViewController.h */,
+				B5664A2916488BED0058D6C5 /* ReferenceViewController.m */,
+				080959700EA577C5007A020A /* Regimen.h */,
+				080959710EA577C5007A020A /* Regimen.m */,
+				08ED80670EAA7B77005B972A /* RegimenDetail.h */,
+				08ED80680EAA7B77005B972A /* RegimenDetail.m */,
+				B55D0918161542B100A6BD82 /* RegimenDetailViewController.h */,
+				B55D0919161542B100A6BD82 /* RegimenDetailViewController.m */,
+				B55D091516153C6000A6BD82 /* RegimenListViewController.h */,
+				B55D091616153C6000A6BD82 /* RegimenListViewController.m */,
+				B5F7C3C7163C608300B78857 /* RegimenReferenceViewController.h */,
+				B5F7C3C8163C608300B78857 /* RegimenReferenceViewController.m */,
+				B5F7C3C9163C608300B78857 /* RegimenReferenceViewController.xib */,
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				B54DDB44163DFF8D00830C25 /* StagingDetailViewController.h */,
+				B54DDB45163DFF8D00830C25 /* StagingDetailViewController.m */,
+				B5664A4A1655C4890058D6C5 /* StagingListViewController.h */,
+				B5664A4B1655C4890058D6C5 /* StagingListViewController.m */,
+				B5F7C3D6163DB63300B78857 /* StagingMViewController.h */,
+				B5F7C3D7163DB63300B78857 /* StagingMViewController.m */,
+				B5F7C3D3163DB31800B78857 /* StagingNViewController.h */,
+				B5F7C3D4163DB31800B78857 /* StagingNViewController.m */,
+				B5B00980167ECA1B009C1C7B /* StagingSViewController.h */,
+				B5B00981167ECA1B009C1C7B /* StagingSViewController.m */,
+				B5F7C3DB163DC1DE00B78857 /* StagingTNMCell.h */,
+				B5F7C3DC163DC1DE00B78857 /* StagingTNMCell.m */,
+				B5F7C3CC163D9EB400B78857 /* StagingTViewController.h */,
+				B5F7C3CD163D9EB400B78857 /* StagingTViewController.m */,
+				B5664A2D16488BED0058D6C5 /* TemperatureViewController.h */,
+				B5664A2C16488BED0058D6C5 /* TemperatureViewController.m */,
+				B5B0098616800FE3009C1C7B /* UIWebView+UserAgent.h */,
+				B5B0098716800FE4009C1C7B /* UIWebView+UserAgent.m */,
+				B5B0098316800EE4009C1C7B /* UserAgent.h */,
+				B5B0098416800EE5009C1C7B /* UserAgent.m */,
+				B5B0097A167E4368009C1C7B /* Util.h */,
+				B5B0097B167E4368009C1C7B /* Util.m */,
+				B53A2D211C667D3A001A21EA /* Gen2BrandViewController.h */,
+				B53A2D221C667D3A001A21EA /* Gen2BrandViewController.m */,
+				B582F41F1C92456E00C51A8D /* Gen2BrandTableViewCell.h */,
+				B582F4201C92456E00C51A8D /* Gen2BrandTableViewCell.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* OncAmigo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				B5CB681318594D8A00508F5F /* OncApp120.png */,
+				B5BC7B7517F3BB8700F1A3E8 /* Default-568h@2x.png */,
+				B5860DD317EBFE9500A942D5 /* OncApp57.png */,
+				B5860DD117EBFD5800A942D5 /* OncApp114.png */,
+				B5860DCF17EBFBF000A942D5 /* OncApp.png */,
+				B5860DCD17EBFBE300A942D5 /* Default@2x.png */,
+				B5860DCB17EBFBDD00A942D5 /* Default.png */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				08095A690EA58456007A020A /* libsqlite3.0.dylib */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* OncAmigo_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B58A21ED1CAA0F7A008C0AC9 /* cancerregimens.1.1.0.sqlite */,
+				B582F4211C92456E00C51A8D /* Gen2BrandTableViewCell.xib */,
+				B53A2D231C667D3A001A21EA /* Gen2BrandViewController.xib */,
+				B5664A3E16488C670058D6C5 /* AbsNeutrophilCountReference.xib */,
+				B5664A3C16488C670058D6C5 /* AbsNeutrophilCountViewController.xib */,
+				B5664A3F16488C670058D6C5 /* BMIReference.xib */,
+				B5664A3D16488C670058D6C5 /* BMIViewController.xib */,
+				B5664A2416475B2B0058D6C5 /* BSACalculatorViewController.xib */,
+				B5664A4016488C670058D6C5 /* BSAReference.xib */,
+				08095DF70EA80FA8007A020A /* CalculatorVC.xib */,
+				B5120D3716D30EF6009FA095 /* CancerListCell.xib */,
+				B55D090B16151E4600A6BD82 /* CancerRegimen_iPhone.storyboard */,
+				B5664A3916488C670058D6C5 /* CcrCalculatorReference.xib */,
+				B5664A3816488C670058D6C5 /* CcrCalculatorViewController.xib */,
+				08BDB9C30EAD2EA3005D28DE /* check.png */,
+				B5993E2816CB3A310066853F /* CPCalculatorReference.xib */,
+				B5993E2F16CB438D0066853F /* CPCalculatorViewController.xib */,
+				B5F3AD6D16E829C700DB5193 /* down.png */,
+				B5C1D95E16D00FB80026DE6B /* ECOGTCSubGroups_iphone.storyboard */,
+				B5B1EC5716AE343200862B5B /* GenericGroupedTableView_iphone_Storyboard.storyboard */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				B5F529BA163454ED0056EF95 /* iPhone.css */,
+				B52604C616A1D1BA0074A08A /* Lymphoma_iphone.storyboard */,
+				B52604CF16A2016A0074A08A /* LymphomaDetailViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				B52604D116A2184A0074A08A /* MyelomaViewController.xib */,
+				B5B1EC6F16B4452300862B5B /* PrognosticRevisedViewController.xib */,
+				B5B1EC5016ADDACC00862B5B /* PrognosticScales_iphone_Storyboard.storyboard */,
+				B5B1EC5216ADDF8100862B5B /* PrognosticScoresDetailViewController.xib */,
+				B51E40F51742ACE000A9C89A /* Regimen_Storyboard.storyboard */,
+				B55D0920161751DF00A6BD82 /* RegimenDetailViewController.xib */,
+				B5F7C3D1163DA4C200B78857 /* StagingCalculator_iPhone.storyboard */,
+				B5B0097E167EC98E009C1C7B /* StagingTCStoryboard_iPhone.storyboard */,
+				B5F7C3D9163DC13D00B78857 /* StagingTNMCell.xib */,
+				B51E40F71742BB4C00A9C89A /* SubCancer1Regimen_iPhone.storyboard */,
+				B51E40FF1742BEC800A9C89A /* SubCancer2Regimen_iPhone.storyboard */,
+				B5664A3B16488C670058D6C5 /* TemperatureReference.xib */,
+				B5664A3A16488C670058D6C5 /* TemperatureViewController.xib */,
+				08BDB9C40EAD2EA3005D28DE /* uncheck.png */,
+				B5F3AD6E16E829C700DB5193 /* up.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* OncAmigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "OncAmigo" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OncAmigo;
+			productName = OncologyApp;
+			productReference = 1D6058910D05DD3D006BFB54 /* OncAmigo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = HPH6H7K376;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OncAmigo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* OncAmigo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				08095DF80EA80FA8007A020A /* CalculatorVC.xib in Resources */,
+				B5CB681418594D8A00508F5F /* OncApp120.png in Resources */,
+				08BDB9C50EAD2EA3005D28DE /* check.png in Resources */,
+				08BDB9C60EAD2EA3005D28DE /* uncheck.png in Resources */,
+				B55D090C16151E4600A6BD82 /* CancerRegimen_iPhone.storyboard in Resources */,
+				B55D0921161751DF00A6BD82 /* RegimenDetailViewController.xib in Resources */,
+				B5F529BB163454ED0056EF95 /* iPhone.css in Resources */,
+				B5F7C3CB163C608300B78857 /* RegimenReferenceViewController.xib in Resources */,
+				B5F7C3D2163DA4C200B78857 /* StagingCalculator_iPhone.storyboard in Resources */,
+				B5F7C3DA163DC13D00B78857 /* StagingTNMCell.xib in Resources */,
+				B5664A2516475B2B0058D6C5 /* BSACalculatorViewController.xib in Resources */,
+				B5664A4116488C670058D6C5 /* CcrCalculatorViewController.xib in Resources */,
+				B5664A4216488C670058D6C5 /* CcrCalculatorReference.xib in Resources */,
+				B5664A4316488C670058D6C5 /* TemperatureViewController.xib in Resources */,
+				B5664A4416488C670058D6C5 /* TemperatureReference.xib in Resources */,
+				B5664A4516488C670058D6C5 /* AbsNeutrophilCountViewController.xib in Resources */,
+				B5664A4616488C670058D6C5 /* BMIViewController.xib in Resources */,
+				B5664A4716488C670058D6C5 /* AbsNeutrophilCountReference.xib in Resources */,
+				B5664A4816488C670058D6C5 /* BMIReference.xib in Resources */,
+				B5664A4916488C670058D6C5 /* BSAReference.xib in Resources */,
+				B5B0097F167EC98E009C1C7B /* StagingTCStoryboard_iPhone.storyboard in Resources */,
+				B582F4231C92456E00C51A8D /* Gen2BrandTableViewCell.xib in Resources */,
+				B52604C716A1D1BA0074A08A /* Lymphoma_iphone.storyboard in Resources */,
+				B52604D016A2016A0074A08A /* LymphomaDetailViewController.xib in Resources */,
+				B52604D216A2184B0074A08A /* MyelomaViewController.xib in Resources */,
+				B5B1EC5116ADDACC00862B5B /* PrognosticScales_iphone_Storyboard.storyboard in Resources */,
+				B5BC7B7617F3BB8700F1A3E8 /* Default-568h@2x.png in Resources */,
+				B53A2D251C667D3A001A21EA /* Gen2BrandViewController.xib in Resources */,
+				B58A21EE1CAA0F7A008C0AC9 /* cancerregimens.1.1.0.sqlite in Resources */,
+				B5B1EC5316ADDF8100862B5B /* PrognosticScoresDetailViewController.xib in Resources */,
+				B5B1EC5816AE343200862B5B /* GenericGroupedTableView_iphone_Storyboard.storyboard in Resources */,
+				B5B1EC7016B4452300862B5B /* PrognosticRevisedViewController.xib in Resources */,
+				B5993E2916CB3A310066853F /* CPCalculatorReference.xib in Resources */,
+				B5993E3016CB438D0066853F /* CPCalculatorViewController.xib in Resources */,
+				B5C1D95F16D00FB80026DE6B /* ECOGTCSubGroups_iphone.storyboard in Resources */,
+				B5120D3816D30EF6009FA095 /* CancerListCell.xib in Resources */,
+				B5F3AD6F16E829C700DB5193 /* down.png in Resources */,
+				B5F3AD7016E829C700DB5193 /* up.png in Resources */,
+				B51E40F61742ACE000A9C89A /* Regimen_Storyboard.storyboard in Resources */,
+				B51E40F81742BB4C00A9C89A /* SubCancer1Regimen_iPhone.storyboard in Resources */,
+				B51E41001742BEC800A9C89A /* SubCancer2Regimen_iPhone.storyboard in Resources */,
+				B5860DD417EBFE9500A942D5 /* OncApp57.png in Resources */,
+				B5860DD517EBFEA900A942D5 /* OncApp114.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* OncologyAppAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				080959720EA577C5007A020A /* Regimen.m in Sources */,
+				08ED80690EAA7B77005B972A /* RegimenDetail.m in Sources */,
+				B55D090816151D8900A6BD82 /* CancerListViewController.m in Sources */,
+				B55D091716153C6000A6BD82 /* RegimenListViewController.m in Sources */,
+				B55D091A161542B100A6BD82 /* RegimenDetailViewController.m in Sources */,
+				B5F7C3CA163C608300B78857 /* RegimenReferenceViewController.m in Sources */,
+				B5F7C3CF163D9EB400B78857 /* StagingTViewController.m in Sources */,
+				B5F7C3D5163DB31800B78857 /* StagingNViewController.m in Sources */,
+				B5F7C3D8163DB63300B78857 /* StagingMViewController.m in Sources */,
+				B5F7C3DD163DC1DF00B78857 /* StagingTNMCell.m in Sources */,
+				B582F4221C92456E00C51A8D /* Gen2BrandTableViewCell.m in Sources */,
+				B54DDB46163DFF8D00830C25 /* StagingDetailViewController.m in Sources */,
+				B5664A2716475B3D0058D6C5 /* BSACalculatorViewController.m in Sources */,
+				B5664A3316488BEE0058D6C5 /* ReferenceViewController.m in Sources */,
+				B5664A3416488BEE0058D6C5 /* CcrCalculatorViewController.m in Sources */,
+				B5664A3516488BEE0058D6C5 /* TemperatureViewController.m in Sources */,
+				B53A2D241C667D3A001A21EA /* Gen2BrandViewController.m in Sources */,
+				B5664A3616488BEE0058D6C5 /* AbsNeutrophilCountViewController.m in Sources */,
+				B5664A3716488BEE0058D6C5 /* BMIViewController.m in Sources */,
+				B5664A4C1655C4890058D6C5 /* StagingListViewController.m in Sources */,
+				B5B0097C167E4368009C1C7B /* Util.m in Sources */,
+				B5B00982167ECA1B009C1C7B /* StagingSViewController.m in Sources */,
+				B5B0098516800EE5009C1C7B /* UserAgent.m in Sources */,
+				B5B0098816800FE4009C1C7B /* UIWebView+UserAgent.m in Sources */,
+				B52604CB16A1D3880074A08A /* LymphomaListViewController.m in Sources */,
+				B52604CE16A1E96E0074A08A /* LymphomaDetailViewController.m in Sources */,
+				B52604D516A219270074A08A /* MyelomaViewController.m in Sources */,
+				B5B1EC4F16ADC2A000862B5B /* PrognosticScoresViewController.m in Sources */,
+				B5B1EC5616ADDFBB00862B5B /* PrognosticScoresDetailViewController.m in Sources */,
+				B5B1EC5B16AE347500862B5B /* GenericGroupedTableViewController.m in Sources */,
+				B5B1EC6A16B434F000862B5B /* PrognosticCalculatorRevisedViewController.m in Sources */,
+				B5993E2C16CB3A550066853F /* CPCalculatorViewController.m in Sources */,
+				B5C1D96516D012070026DE6B /* ECOGTCSubGroupsViewController.m in Sources */,
+				B5120D3C16D30F32009FA095 /* CancerListCell.m in Sources */,
+				B51E40FB1742BB8C00A9C89A /* SubCancerListViewController1.m in Sources */,
+				B51E40FE1742BE8800A9C89A /* SubCancerListViewController2.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OncAmigo_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.promedhealth.${PRODUCT_NAME:identifier}";
+				PRODUCT_NAME = OncAmigo;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Niranjan Kode (HPH6H7K376)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OncAmigo_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.promedhealth.${PRODUCT_NAME:identifier}";
+				PRODUCT_NAME = OncAmigo;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: PRO-MED HEALTH CARE SOLUTIONS, LLC (HPH6H7K376)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: PRO-MED HEALTH CARE SOLUTIONS, LLC (HPH6H7K376)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "OncAmigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OncAmigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
